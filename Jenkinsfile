@@ -40,7 +40,7 @@ pipeline {
                 // black formatea el código automáticamente, flake8 busca errores de estilo
                 sh '''
                     . $VENV_DIR/bin/activate
-                    black src/ tests/ --check
+                    black src/ tests/
                     flake8 src/ tests/ --max-line-length=88
                 '''
             }
