@@ -1,0 +1,6 @@
+# .gitignore
+.venv/
+__pycache__/
+*.pyc
+results.xml
+.pytest_cache/
