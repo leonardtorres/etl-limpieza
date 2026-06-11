@@ -51,6 +51,7 @@ pipeline {
                 echo 'Ejecutando pruebas con PyTest...'
                 sh '''
                     . $VENV_DIR/bin/activate
+                    export PYTHONPATH=.
                     pytest tests/ --junitxml=results.xml
                 '''
             }
